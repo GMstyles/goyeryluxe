@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maquilero</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #0a0a0a;
+      color: #e6e6e6;
+    }
+    header {
+      background-color: #000;
+      border-bottom: 1px solid #bfa046;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo img {
+      height: 70px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #e6e6e6;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #bfa046;
+    }
+    .hero {
+      text-align: center;
+      padding: 160px 20px 100px;
+      background-color: #111;
+    }
+    .hero img {
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 40px;
+      color: #f7f7f7;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+    }
+    .section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    .section h2 {
+      text-align: center;
+      color: #bfa046;
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+    .section p {
+      text-align: center;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+    footer {
+      background-color: #000;
+      color: #999;
+      text-align: center;
+      padding: 30px 10px;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      border-radius: 50%;
+      padding: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+    .whatsapp img {
+      width: 28px;
+      height: 28px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="logo-maquilero.png" alt="Logo Maquilero">
+      </div>
+      <nav>
+        <a href="#home">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <img src="logo-maquilero.png" alt="Logo Maquilero">
+    <h1>Maquilero</h1>
+    <p>Diseño exclusivo en cada detalle</p>
+  </section>
+
+  <section id="productos" class="section">
+    <h2>Nuestros Productos</h2>
+    <p>Muy pronto podrás explorar nuestras piezas únicas hechas para deslumbrar.</p>
+  </section>
+
+  <section id="nosotros" class="section">
+    <h2>Sobre Nosotros</h2>
+    <p>Maquilero es sinónimo de lujo personalizado. Diseños únicos que cuentan historias de elegancia.</p>
+  </section>
+
+  <section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <p>Contáctanos vía WhatsApp para atención personalizada y pedidos exclusivos.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Maquilero. Todos los derechos reservados.
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/573508106411" target="_blank" title="Chatea con nosotros en WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
+  </a>
+
+</body>
+</html>
