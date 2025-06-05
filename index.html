@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Goyery Luxe</title>
+  <style>
+    body {
+      background-color: #111;
+      font-family: 'Georgia', serif;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1a1a1a;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      width: 160px;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      color: #bfa046;
+      margin: 10px 0 0;
+    }
+    .nosotros {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+    }
+    .nosotros h2 {
+      color: #bfa046;
+      text-align: center;
+    }
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+      gap: 20px;
+    }
+    .product-card {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 15px;
+      width: 260px;
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .price {
+      color: #bfa046;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+    button {
+      background-color: #bfa046;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      padding: 8px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+    .whatsapp img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .inicio, .nosotros {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+    }
+    .inicio h2, .nosotros h2 {
+      color: #bfa046;
+      text-align: center;
+    }
+    .imagenes-inicio, .imagenes-nosotros {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 15px;
+    }
+    .imagenes-inicio img, .imagenes-nosotros img {
+      max-width: 220px;
+      height: auto;
+      border-radius: 6px;
+    }
+    .testimonios blockquote {
+      font-style: italic;
+      margin: 10px 0;
+      color: #ccc;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <img src="logo-goyeryluxe.png" alt="Logo Goyery Luxe">
+    <h1>Goyery Luxe - Joyas Exclusivas</h1>
+    <p>Descubre nuestras joyas en oro y esmeralda</p>
+  </header>
+
+  
+<section class="inicio">
+  <h2>Inicio</h2>
+  <p>En Goyery Luxe celebramos la belleza natural del oro y la esmeralda desde su origen. Cada pieza nace de una historia única, extraída de las entrañas de la tierra para transformarse en elegancia.</p>
+  <div class="imagenes-inicio">
+    <img src="inicio-oro.jpg" alt="Lingotes de oro">
+    <img src="inicio-esmeralda.jpg" alt="Esmeralda natural">
+  </div>
+</section>
+
+<section class="nosotros">
+  <h2>Nosotros</h2>
+  <p>Somos una excelente empresa de joyas que llevamos más de 30 años en el mercado y haciendo que las personas tengan una esencia diferente al lucir nuestras hermosas joyas.</p>
+  <p>También puedes ubicarnos en nuestras oficinas del centro.</p>
+  <p>Gracias por confiar en Goyery Luxe.</p>
+  <div class="testimonios">
+    <blockquote>"Compré un anillo de esmeralda y superó mis expectativas. ¡Calidad increíble!" — <strong>María R.</strong></blockquote>
+    <blockquote>"La atención es impecable. Me encanta lucir sus joyas en cada evento." — <strong>Carlos G.</strong></blockquote>
+    <blockquote>"Una marca que realmente sabe lo que es el lujo." — <strong>Lucía T.</strong></blockquote>
+  </div>
+  <div class="imagenes-nosotros">
+    <img src="nosotros-esmeralda-1.jpg" alt="Esmeralda en roca">
+    <img src="nosotros-mina.jpg" alt="Mina de oro">
+    <img src="nosotros-oro-ruta.jpg" alt="Oro en la roca">
+    <img src="nosotros-esmeralda-2.jpg" alt="Cristales de esmeralda">
+  </div>
+</section>
+
+    <h2>Nosotros</h2>
+    <p>Somos una excelente empresa de joyas que llevamos más de 30 años en el mercado y haciendo que las personas tengan una esencia diferente al lucir nuestras hermosas joyas.</p>
+    <p>También puedes ubicarnos en nuestras oficinas del centro.</p>
+    <p>Gracias por confiar en Goyery Luxe.</p>
+  </section>
+
+  <div class="productos">
+    
+    <div class="product-card">
+      <img src="collar1.jpg" alt="Collar Real de Esmeralda">
+      <h3>Collar Real de Esmeralda</h3>
+      <p class="price">$3.900.000</p>
+      <div style="margin-top: 10px;">
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" min="1" max="10" value="1" style="width: 60px;">
+      </div>
+      <button style="margin-top: 10px;">Agregar al carrito</button>
+    </div>
+    
+    <div class="product-card">
+      <img src="collar2.jpg" alt="Collar Elegancia Doble">
+      <h3>Collar Elegancia Doble</h3>
+      <p class="price">$4.250.000</p>
+      <div style="margin-top: 10px;">
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" min="1" max="10" value="1" style="width: 60px;">
+      </div>
+      <button style="margin-top: 10px;">Agregar al carrito</button>
+    </div>
+    
+    <div class="product-card">
+      <img src="anillo1.jpg" alt="Anillo Clásico Oro Verde">
+      <h3>Anillo Clásico Oro Verde</h3>
+      <p class="price">$2.850.000</p>
+      <div style="margin-top: 10px;">
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" min="1" max="10" value="1" style="width: 60px;">
+      </div>
+      <button style="margin-top: 10px;">Agregar al carrito</button>
+    </div>
+    
+    <div class="product-card">
+      <img src="aretes.jpg" alt="Aretes Gota & Anillo">
+      <h3>Aretes Gota & Anillo</h3>
+      <p class="price">$5.200.000</p>
+      <div style="margin-top: 10px;">
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" min="1" max="10" value="1" style="width: 60px;">
+      </div>
+      <button style="margin-top: 10px;">Agregar al carrito</button>
+    </div>
+    
+    <div class="product-card">
+      <img src="gargantilla.jpg" alt="Gargantilla Finarte">
+      <h3>Gargantilla Finarte</h3>
+      <p class="price">€4.150,00</p>
+      <div style="margin-top: 10px;">
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" min="1" max="10" value="1" style="width: 60px;">
+      </div>
+      <button style="margin-top: 10px;">Agregar al carrito</button>
+    </div>
+    
+  </div>
+
+  <div class="whatsapp">
+    <a href="https://wa.me/573508106411" target="_blank">
+      <img src="whatsapp.png" alt="WhatsApp">
+    </a>
+  </div>
+
+  <script>
+    let carrito = [];
+    const botones = document.querySelectorAll('button');
+    botones.forEach((btn, index) => {
+      btn.addEventListener('click', () => {
+        const cantidad = btn.parentElement.querySelector('input').value;
+        const nombre = btn.parentElement.querySelector('h3').innerText;
+        const precio = btn.parentElement.querySelector('.price').innerText;
+        carrito.push({ nombre, precio, cantidad });
+        alert(`Agregado al carrito: ${nombre} (x${cantidad})`);
+        actualizarCarrito();
+      });
+    });
+
+    function actualizarCarrito() {
+      let totalItems = carrito.reduce((acc, item) => acc + parseInt(item.cantidad), 0);
+      document.getElementById("contador").innerText = totalItems;
+    }
+  </script>
+  <style>
+    .carrito-info {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #bfa046;
+      color: #000;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 5px;
+      z-index: 1001;
+    }
+  
+    .inicio, .nosotros {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+    }
+    .inicio h2, .nosotros h2 {
+      color: #bfa046;
+      text-align: center;
+    }
+    .imagenes-inicio, .imagenes-nosotros {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 15px;
+    }
+    .imagenes-inicio img, .imagenes-nosotros img {
+      max-width: 220px;
+      height: auto;
+      border-radius: 6px;
+    }
+    .testimonios blockquote {
+      font-style: italic;
+      margin: 10px 0;
+      color: #ccc;
+    }
+</style>
+  <div class="carrito-info">🛒 Carrito: <span id="contador">0</span></div>
+</body>
+
+</html>
