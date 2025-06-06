@@ -1,0 +1,28 @@
+/* Fondo general */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Encabezado con fondo negro */                                                          
+.encabezado {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    color: #FFD700; /* dorado */            
+}
+
+/* Botón de WhatsApp flotante */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+}  
+
+style.css
+Commit new file
