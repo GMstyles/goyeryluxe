@@ -1,28 +1,107 @@
-/* Fondo general */
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-/* Encabezado con fondo negro */                                                          
-.encabezado {
-    background-color: #000;
-    padding: 20px;
-    text-align: center;
-    color: #FFD700; /* dorado */            
-}
-
-/* Botón de WhatsApp flotante */
-.whatsapp-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 100;
-    width: 60px;
-    height: 60px;
-}  
-
-style.css
-Commit new file
+  body {
+      background-color: #111;
+      font-family: 'Georgia', serif;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1a1a1a;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      width: 160px;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      color: #bfa046;
+      margin: 10px 0 0;
+    }
+    .nosotros {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+    }
+    .nosotros h2 {
+      color: #bfa046;
+      text-align: center;
+    }
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+      gap: 20px;
+    }
+    .product-card {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 15px;
+      width: 260px;
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .price {
+      color: #bfa046;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+    button {
+      background-color: #bfa046;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      padding: 8px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+    .whatsapp img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .inicio, .nosotros {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+    }
+    .inicio h2, .nosotros h2 {
+      color: #bfa046;
+      text-align: center;
+    }
+    .imagenes-inicio, .imagenes-nosotros {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 15px;
+    }
+    .imagenes-inicio img, .imagenes-nosotros img {
+      max-width: 220px;
+      height: auto;
+      border-radius: 6px;
+    }
+    .testimonios blockquote {
+      font-style: italic;
+      margin: 10px 0;
+      color: #ccc;
+    }
