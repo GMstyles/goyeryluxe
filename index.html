@@ -130,7 +130,10 @@
     <img src="inicio-esmeralda.jpg" alt="Esmeralda natural">
   </div>
 </section>
-
+<section class="carrito">
+  <h2>🛒 Carrito de Compras</h2>
+  <ul id="lista-carrito"></ul>
+  <p id="total-pago">Total: $0<
 <section class="nosotros">
   <h2>Nosotros</h2>
   <p>Somos una excelente empresa de joyas que llevamos más de 30 años en el mercado y haciendo que las personas tengan una esencia diferente al lucir nuestras hermosas joyas.</p>
@@ -165,7 +168,7 @@
         <label for="cantidad">Cantidad:</label>
         <input type="number" min="1" max="10" value="1" style="width: 60px;">
       </div>
-      <button style="margin-top: 10px;">Agregar al carrito</button>
+      <button style="margin-top: 10px;" onclick="agregarAlCarrito('Collar Elegancia Doble', 4250000)">Agregar al carrito</button>
     </div>
     
     <div class="product-card">
@@ -284,5 +287,36 @@
 </style>
   <div class="carrito-info">🛒 Carrito: <span id="contador">0</span></div>
 </body>
+<script>
+  const carrito = [];
+
+  function agregarAlCarrito(nombre, precio) {
+    carrito.push({ nombre, precio });
+    actualizarCarrito();
+  }
+
+  function actualizarCarrito() {
+    const lista = document.getElementById("lista-carrito");
+    const total = document.getElementById("total-pago");
+    lista.innerHTML = "";
+    let suma = 0;
+    carrito.forEach(producto => {
+      const item = document.createElement("li");
+      item.textContent = ${producto.nombre} - $${producto.precio};
+      lista.appendChild(item);
+      suma += producto.precio;
+    });
+    total.textContent = Total: $${suma};
+  }
+
+  function simularPago() {
+    if (carrito.length === 0) {
+      document.getElementById("mensaje-pago").textContent = "Tu carrito está vacío.";
+      return;
+    }
+    document.getElementById("mensaje-pago").textContent = "✅ ¡Gracias por tu compra! Simulación de pago exitosa.";
+    // Aquí podrías limpiar el carrito si quieres
+  }
+</script>
 
 </html>
