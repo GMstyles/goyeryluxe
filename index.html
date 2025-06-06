@@ -222,25 +222,72 @@
     </a>
   </div>
 
-  <script>
-    let carrito = [];
-    const botones = document.querySelectorAll('button');
-    botones.forEach((btn, index) => {
-      btn.addEventListener('click', () => {
-        const cantidad = btn.parentElement.querySelector('input').value;
-        const nombre = btn.parentElement.querySelector('h3').innerText;
-        const precio = btn.parentElement.querySelector('.price').innerText;
-        carrito.push({ nombre, precio, cantidad });
-        alert(`Agregado al carrito: ${nombre} (x${cantidad})`);
-        actualizarCarrito();
-      });
+<script>
+  // Array para guardar los productos del carrito
+  let carrito = [];
+
+  // Simulación de productos disponibles
+  const productos = [
+    { id: 1, nombre: "Collar Esmeralda", precio: 120, imagen: "img/collar1.png" },
+    { id: 2, nombre: "Anillo Oro", precio: 150, imagen: "img/anillo1.png" },
+    { id: 3, nombre: "Aretes", precio: 80, imagen: "img/aretes1.png" }
+  ];
+
+  // Función para renderizar productos (puedes poner esto en la sección Productos)
+  function mostrarProductos() {
+    const seccionProductos = document.getElementById("productos");
+    productos.forEach(producto => {
+      const div = document.createElement("div");
+      div.innerHTML = `
+        <img src="${producto.imagen}" width="100">
+        <p>${producto.nombre}</p>
+        <p>$${producto.precio}</p>
+        <button onclick="agregarAlCarrito(${producto.id})">Agregar al carrito</button>
+      `;
+      seccionProductos.appendChild(div);
+    });
+  }
+
+  // Función para agregar productos al carrito
+  function agregarAlCarrito(id) {
+    const producto = productos.find(p => p.id === id);
+    carrito.push(producto);
+    mostrarCarrito();
+  }
+
+  // Función para mostrar el carrito
+  function mostrarCarrito() {
+    const contenedor = document.getElementById("carrito-container");
+    contenedor.innerHTML = ""; // Limpiar
+    carrito.forEach((producto, index) => {
+      contenedor.innerHTML += `
+        <div>
+          <p>${producto.nombre} - $${producto.precio}</p>
+        </div>
+      `;
     });
 
-    function actualizarCarrito() {
-      let totalItems = carrito.reduce((acc, item) => acc + parseInt(item.cantidad), 0);
-      document.getElementById("contador").innerText = totalItems;
-    }
-  </script>
+    mostrarResumen();
+  }
+
+  // Función para mostrar resumen de pago
+  function mostrarResumen() {
+    const resumen = document.getElementById("resumen-container");
+    const total = carrito.reduce((sum, prod) => sum + prod.precio, 0);
+    resumen.innerHTML = `
+      <h3>Total: $${total}</h3>
+      <button onclick="simularPago()">Simular Pago</button>
+    `;
+  }
+
+  // Función para simular el pago
+  function simularPago() {
+    alert("Gracias por tu compra. Pronto te contactaremos por WhatsApp.");
+  }
+
+  // Ejecutar al cargar
+  window.onload = mostrarProductos;
+</script>
   <style>
     .carrito-info {
       position: fixed;
